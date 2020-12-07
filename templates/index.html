@@ -21,7 +21,7 @@
 
       <!-- Add section for Mars News -->
       <div class="row" id="mars-news">
-        <div class="col-md-12">
+        <div class="wt-grid__item-xs-4 wt-grid__item-lg-2 wt-text-center-xs wt-break-word wt-pb-xs-3 wt-pl-md-3 wt-pr-md-3">
           <div class="media">
             <div class="media-body">
               <h2>Latest Mars News</h2>
@@ -34,7 +34,7 @@
 
       <!-- Section for Featured Image and Facts table -->
       <div class="row" id="mars-featured-image">
-        <div class="col-md-8">
+        <div class="wt-grid__item-xs-4 wt-grid__item-lg-2 wt-text-center-xs wt-break-word wt-pb-xs-3 wt-pl-md-3 wt-pr-md-3">
           <h2>Featured Mars Image</h2>
 
           <!-- if images is False/None/non-existent, then default to error message -->
@@ -61,7 +61,7 @@
         </div>
 
         {% for hemisphere in mars.hemispheres %}
-        <div class="col-md-6">
+        <div class="wt-grid__item-xs-4 wt-grid__item-lg-2 wt-text-center-xs wt-break-word wt-pb-xs-3 wt-pl-md-3 wt-pr-md-3">
           <div class="thumbnail">
             <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="...">
             <div class="caption">
